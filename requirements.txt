@@ -11,3 +11,4 @@ django-crispy-forms
 djangorestframework>=3.14.0
 djangorestframework-simplejwt>=5.2.2 
 django-cors-headers>=4.0.0 
+gunicorn>=21.2.0
