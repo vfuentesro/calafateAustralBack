@@ -251,6 +251,11 @@ CORS_ALLOWED_ORIGINS = [
     # Agrega aquí tu dominio personalizado si lo tienes, por ejemplo:
     # "https://www.tudominio.com",
 ]
+
+CORS_TRUSTED_ORIGINS = [
+    "https://calafate-austral.web.app",
+    "https://calafate-austral.firebaseapp.com",
+]
 SESSION_COOKIE_SAMESITE = "Lax"
 SESSION_COOKIE_SECURE = False
 
