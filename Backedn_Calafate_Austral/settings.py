@@ -89,16 +89,25 @@ WSGI_APPLICATION = 'Backedn_Calafate_Austral.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': env('DB_ENGINE', default='django.db.backends.mysql'),
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST', default='localhost'),
-        'PORT': env('DB_PORT', default='3306'),
+# Configuración de base de datos compatible con Railway y variables individuales
+if env('DATABASE_URL', default=None):
+    DATABASES = {
+        'default': env.db(),  # Toma DATABASE_URL automáticamente
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': env('MYSQLDATABASE', default='railway'),
+            'USER': env('MYSQLUSER', default='root'),
+            'PASSWORD': env('MYSQLPASSWORD', default=''),
+            'HOST': env('MYSQLHOST', default='localhost'),
+            'PORT': env('MYSQLPORT', default='3306'),
+            'OPTIONS': {
+                'charset': 'utf8mb4',
+            },
+        }
+    }
 
 
 # Password validation
