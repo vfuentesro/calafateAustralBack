@@ -310,6 +310,7 @@ def admin_venta_detalle(request, venta_id):
     }
     return render(request, 'Tienda/admin/venta_detalle.html', context)
 
+@csrf_exempt
 def login_compra(request):
     """Login para usuarios registrados y superusers Django, con rate limiting y mensajes genéricos"""
     next_url = request.GET.get('next', '')
