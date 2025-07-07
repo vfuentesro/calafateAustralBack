@@ -68,6 +68,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
     "http://localhost:5173",
+    "https://calafateaustralback-production.up.railway.app",
 ]
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
