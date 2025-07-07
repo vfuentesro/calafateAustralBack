@@ -64,9 +64,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:5173",
-]
+CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=["http://localhost:5173"])
 
 TEMPLATES = [
     {
