@@ -24,4 +24,4 @@ ENV PYTHONUNBUFFERED=1
 ENV PORT=8080
 
 # Comando para correr el servidor
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+CMD ["sh", "-c", "python manage.py migrate && gunicorn Backedn_Calafate_Austral.wsgi:application --bind 0.0.0.0:8080"]
