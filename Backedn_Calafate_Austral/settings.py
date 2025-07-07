@@ -34,7 +34,13 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
+ALLOWED_HOSTS = [
+    "calafateaustralback-production.up.railway.app",
+    "calafate-austral.web.app",
+    "calafate-austral.firebaseapp.com",
+    "localhost",
+    "127.0.0.1"
+]
 
 
 # Application definition
@@ -68,7 +74,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
     "http://localhost:5173",
-    "https://calafateaustralback-production.up.railway.app",
+    "https://calafateaustralback-production.up.railway.app"
 ]
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
@@ -255,7 +261,8 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
 CORS_ALLOWED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
-    "http://localhost:5173",  # para desarrollo local
+    "http://localhost:5173",
+    "https://calafateaustralback-production.up.railway.app"
 ]
 
 CORS_TRUSTED_ORIGINS = [
