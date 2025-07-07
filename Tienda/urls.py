@@ -7,6 +7,7 @@ from .api_views import (
     sync_cart,
     mis_ordenes,
     actualizar_usuario,
+    get_csrf,
 )
 from . import views
 from django.urls import reverse
@@ -24,7 +25,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api/test/', test_connection, name='test-connection'),
     path('api/auth/me/', current_user, name='current_user'),
-    path('api/csrf/', views.csrf_cookie, name='csrf_cookie'),
+    path('api/csrf/', get_csrf, name='get_csrf'),
     path('api/sync-cart/', sync_cart, name='sync_cart'),
     path('api/mis-ordenes/', mis_ordenes, name='mis_ordenes'),
     path('api/actualizar-usuario/', actualizar_usuario, name='actualizar_usuario'),

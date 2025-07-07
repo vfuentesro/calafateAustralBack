@@ -8,7 +8,7 @@ from django.db.models.functions import TruncDay
 from django.http import JsonResponse
 from django.template.loader import render_to_string
 from django.utils import timezone
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_GET, require_POST
 
@@ -414,3 +414,7 @@ def actualizar_usuario(request):
     usuario.apellido_u = data.get('apellido_u', usuario.apellido_u)
     usuario.save()
     return JsonResponse({'success': True})
+
+@ensure_csrf_cookie
+def get_csrf(request):
+    return JsonResponse({'detail': 'CSRF cookie set'})

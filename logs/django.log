@@ -46638,3 +46638,9 @@ WARNING 2025-07-07 01:19:04,283 log 6928 26812 Forbidden: /api/auth/me/
 WARNING 2025-07-07 01:19:04,284 basehttp 6928 26812 "GET /api/auth/me/ HTTP/1.1" 403 58
 INFO 2025-07-07 01:19:04,291 basehttp 6928 28612 "GET /api/productos/ HTTP/1.1" 200 431
 INFO 2025-07-07 01:19:04,697 basehttp 6928 28612 - Broken pipe from ('127.0.0.1', 61306)
+INFO 2025-07-07 10:25:12,751 autoreload 2644 21128 Watching for file changes with StatReloader
+INFO 2025-07-07 10:28:48,623 autoreload 11692 15144 Watching for file changes with StatReloader
+INFO 2025-07-07 10:35:06,558 autoreload 11692 15144 C:\Users\vicen\Downloads\calafateAustral\back-end\Tienda\api_views.py changed, reloading.
+INFO 2025-07-07 10:35:07,966 autoreload 4696 14532 Watching for file changes with StatReloader
+INFO 2025-07-07 10:35:10,525 autoreload 4696 14532 C:\Users\vicen\Downloads\calafateAustral\back-end\Tienda\urls.py changed, reloading.
+INFO 2025-07-07 10:35:11,808 autoreload 2524 14068 Watching for file changes with StatReloader
