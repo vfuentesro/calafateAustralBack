@@ -1,0 +1,1338 @@
+19:09:42.817 [vite] connecting... client:495:9
+19:09:42.848 [vite] connected. client:618:15
+19:09:46.017 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:47.762 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:48.037 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:48.156 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:48.310 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:48.639 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:48.705 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:48.825 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:49.877 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:49.993 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:50.484 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:50.765 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:51.267 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:51.372 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:51.472 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:51.642 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:51.792 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:53.763 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:53.853 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:53.988 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:54.269 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:54.484 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:54.729 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:54.957 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:55.277 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:58.305 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:58.442 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:58.597 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:58.714 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:59.002 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:59.109 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:59.299 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:09:59.430 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:01.268 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:01.344 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:01.422 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:01.737 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:02.419 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:03.577 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:03.695 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:03.828 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:03.923 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:04.174 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:04.344 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:04.437 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:04.570 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:06.124 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:06.461 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:06.539 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:06.610 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:06.963 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:07.204 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:07.411 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:07.618 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:07.820 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:13.336 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:13.465 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:13.568 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:13.680 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:13.974 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:14.084 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:14.198 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:14.319 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:15.610 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.120 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.148 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.180 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.211 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.241 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.274 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.320 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:16.955 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:17.149 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:17.428 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:17.554 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:17.847 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:17.981 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:18.152 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:18.349 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:19.255 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:20.167 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:20.401 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:20.641 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:22.271 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:22.407 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:22.628 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:22.778 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:23.003 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:23.129 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:23.269 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:23.470 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:24.214 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:24.336 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:24.433 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:24.805 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:29.550 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:30.315 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:30.605 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:30.772 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:30.876 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:31.242 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:31.429 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:31.551 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:31.662 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:31.925 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:32.186 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:32.527 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:32.686 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:32.857 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:33.024 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:33.175 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:33.911 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:34.122 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:34.253 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:34.355 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:34.579 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:34.776 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:34.994 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:35.448 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:35.654 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:35.820 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:35.971 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:36.130 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.069 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.165 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.384 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.489 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.692 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.789 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:38.919 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:39.081 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:39.201 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:41.200 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:41.311 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:43.832 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:43.928 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:44.079 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:44.148 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:46.418 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:46.719 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:46.842 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.085 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.255 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.347 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.461 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.528 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.688 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.781 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:47.867 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:48.088 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:48.212 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:48.317 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:48.421 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:48.565 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:48.725 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:52.353 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:52.550 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:54.271 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:54.556 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:54.638 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:54.721 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:55.017 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:55.250 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:55.467 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:55.669 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:10:55.873 [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated. 
+  at <Register onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< 
+Proxy { <target>: Proxy, <handler>: {…} }
+ > > 
+  at <BaseTransition mode="out-in" appear=false persisted=false  ... > 
+  at <Transition name="fade" mode="out-in" > 
+  at <RouterView> 
+  at <App> chunk-UJUDSYKX.js:2125:13
+19:11:03.667 Error al interpretar el valor para '-webkit-text-size-adjust'.  Declaración rechazada. localhost:5173:141:29
+19:11:03.668 Propiedad desconocida 'k'.  Declaración rechazada. localhost:5173:1738:5
+19:11:03.669 Error al interpretar el valor para 'scroll-snap-stop'.  Declaración rechazada. localhost:5173:161:21
+19:11:04.890 XHRPOST
+http://localhost:5173/compra/registro-usuario/
+[HTTP/1.1 500 Internal Server Error 123ms]
+
+19:11:07.068 Error de mapa de fuente: No sources are declared in this source map.
+URL del recurso: http://localhost:5173/node_modules/.vite/deps/chunk-PZ5AY32C.js?v=4f2c2de8 
+URL del mapa de fuente: chunk-PZ5AY32C.js.map

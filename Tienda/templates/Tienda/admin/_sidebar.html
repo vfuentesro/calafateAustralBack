@@ -1,0 +1,13 @@
+<div class="admin-sidebar p-3 rounded">
+    <h5 class="text-white mb-3">Administración</h5>
+    <nav class="nav flex-column">
+        <a class="nav-link" href="{% url 'admin_dashboard' %}"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+        <a class="nav-link" href="{% url 'admin_productos' %}"><i class="fas fa-box me-2"></i>Productos</a>
+        <a class="nav-link" href="{% url 'admin_categorias' %}"><i class="fas fa-tags me-2"></i>Categorías</a>
+        <a class="nav-link" href="{% url 'admin_ofertas' %}"><i class="fas fa-percent me-2"></i>Ofertas</a>
+        <a class="nav-link" href="{% url 'admin_ventas' %}"><i class="fas fa-shopping-cart me-2"></i>Ventas</a>
+        <a class="nav-link" href="{% url 'admin_usuarios' %}"><i class="fas fa-users me-2"></i>Usuarios</a>
+        <a class="nav-link" href="{% url 'admin_mensajes' %}"><i class="fas fa-envelope me-2"></i>Mensajes</a>
+        <a class="nav-link" href="{% url 'admin_configuracion' %}"><i class="fas fa-cog me-2"></i>Configuración</a>
+    </nav>
+</div> 

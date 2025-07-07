@@ -1,0 +1,105 @@
+<!-- Tienda/compra/registro_usuario.html -->
+{% extends 'Tienda/base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Registro</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="mb-3">Titular de la cuenta</h4>
+                {% for field in form %}
+                    <div class="mb-3">
+                        {% if field.name == 'numero_telefono_u' %}
+                            <label for="id_numero_telefono_u" class="form-label">Número Teléfono*</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+56</span>
+                                <input type="tel" id="id_numero_telefono_u" name="numero_telefono_u" class="form-control" maxlength="11" pattern="[0-9 ]{9,11}" placeholder="9 1234 5678 o 2 2345 6789" required value="{{ field.value|default:'' }}">
+                            </div>
+                            <div class="form-text">Ejemplo: 9 1234 5678 (celular) o 2 2345 6789 (fijo). El número debe tener 9 dígitos y se enviará con el prefijo +56.</div>
+                            {% for error in field.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                            {% endfor %}
+                        {% else %}
+                            <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}{% if field.field.required %}*{% endif %}</label>
+                            {{ field }}
+                            {% if field.help_text %}
+                                <div class="form-text">{{ field.help_text }}</div>
+                            {% endif %}
+                            {% for error in field.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Dirección de envío</h4>
+                {% for field in direccion_form %}
+                    <div class="mb-3">
+                        <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}{% if field.field.required %}*{% endif %}</label>
+                        {{ field }}
+                        {% if field.help_text %}
+                            <div class="form-text">{{ field.help_text }}</div>
+                        {% endif %}
+                        {% for error in field.errors %}
+                            <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-warning px-5">Registrarse</button>
+        </div>
+    </form>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const rutInput = document.getElementById('id_rut');
+    if (rutInput) {
+        rutInput.addEventListener('input', function(e) {
+            let value = rutInput.value.replace(/[^0-9kK]/g, '').toUpperCase();
+            // Separar dígito verificador
+            let cuerpo = value.slice(0, -1);
+            let dv = value.slice(-1);
+            // Formatear cuerpo con puntos
+            let formatted = '';
+            let i = 0;
+            for (let j = cuerpo.length - 1; j >= 0; j--) {
+                formatted = cuerpo[j] + formatted;
+                i++;
+                if (i % 3 === 0 && j !== 0) {
+                    formatted = '.' + formatted;
+                }
+            }
+            if (formatted) {
+                formatted += '-' + dv;
+            } else {
+                formatted = dv;
+            }
+            rutInput.value = formatted;
+        });
+    }
+    const telInput = document.getElementById('id_numero_telefono_u');
+    if (telInput) {
+        telInput.addEventListener('input', function(e) {
+            let value = telInput.value.replace(/[^0-9]/g, '');
+            // Limitar a 9 dígitos
+            value = value.slice(0, 9);
+            // Formatear: 9 1234 5678 o 2 2345 6789
+            if (value.length === 9 && value[0] === '9') {
+                // Celular
+                value = value.replace(/(\d)(\d{4})(\d{4})/, '$1 $2 $3');
+            } else if (value.length === 9) {
+                // Fijo
+                value = value.replace(/(\d)(\d{4})(\d{4})/, '$1 $2 $3');
+            } else if (value.length > 5) {
+                value = value.replace(/(\d{1,5})(\d{1,4})/, '$1 $2');
+            }
+            telInput.value = value;
+        });
+    }
+});
+</script>
+{% endblock %} 

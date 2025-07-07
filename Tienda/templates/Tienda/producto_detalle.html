@@ -1,0 +1,190 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}{{ producto.nombre_p }} - Calafate Austral{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Inicio</a></li>
+            {% if producto.id_categoria %}
+            <li class="breadcrumb-item">{{ producto.id_categoria.nombre_c }}</li>
+            {% endif %}
+            <li class="breadcrumb-item active">{{ producto.nombre_p }}</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <!-- Carrusel de imágenes del producto -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <div id="productoImagenes" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            {% if producto.imagen %}
+                            <div class="carousel-item active">
+                                <img src="{{ producto.imagen.url }}" class="d-block w-100" alt="Imagen principal" style="max-height: 400px; object-fit: contain;">
+                            </div>
+                            {% endif %}
+                            {% for imagen in producto.imagenes.all %}
+                            <div class="carousel-item">
+                                <img src="{{ imagen.imagen.url }}" class="d-block w-100" alt="{{ imagen.descripcion|default:'Imagen del producto' }}" style="max-height: 400px; object-fit: contain;">
+                                {% if imagen.descripcion %}
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                                    <p class="mb-0">{{ imagen.descripcion }}</p>
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% if producto.imagen or producto.imagenes.exists %}
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productoImagenes" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productoImagenes" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            {% if producto.imagen %}
+                            <button type="button" data-bs-target="#productoImagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                            {% endif %}
+                            {% for imagen in producto.imagenes.all %}
+                            <button type="button" data-bs-target="#productoImagenes" data-bs-slide-to="{{ forloop.counter }}" aria-label="Imagen {{ forloop.counter|add:'1' }}"></button>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-image fa-5x text-muted mb-3"></i>
+                            <p class="text-muted">No hay imágenes disponibles</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información del producto -->
+        <div class="col-md-6">
+            <h1 class="mb-3">{{ producto.nombre_p }}</h1>
+            
+            {% if producto.id_categoria %}
+            <p class="text-muted mb-3">
+                <i class="fas fa-tag me-2"></i>{{ producto.id_categoria.nombre_c }}
+            </p>
+            {% endif %}
+
+            <div class="producto-precio mb-4">
+                {% if producto.tiene_oferta_activa %}
+                    <span class="h2 text-muted text-decoration-line-through">${{ producto.precio_p|floatformat:0 }} CLP</span>
+                    <span class="h2 text-danger fw-bold ms-2">${{ producto.precio_con_descuento|floatformat:0 }} CLP</span>
+                    <span class="badge bg-success ms-2 fs-6">-{{ producto.id_oferta.descuento }}%</span>
+                {% else %}
+                    <span class="h2 fw-bold">${{ producto.precio_p|floatformat:0 }} CLP</span>
+                {% endif %}
+            </div>
+
+            {% if producto.descripcion_p %}
+            <div class="mb-4">
+                <h5>Descripción</h5>
+                <p>{{ producto.descripcion_p }}</p>
+            </div>
+            {% endif %}
+
+            <div class="mb-4">
+                <h5>Información del producto</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="fas fa-box me-2 text-primary"></i>
+                        <strong>Stock disponible:</strong> {{ producto.stock_p }} unidades
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-hashtag me-2 text-primary"></i>
+                        <strong>Código:</strong> #{{ producto.sku }}
+                    </li>
+                    {% if producto.tiene_oferta_activa %}
+                    <li class="mb-2">
+                        <i class="fas fa-percentage me-2 text-danger"></i>
+                        <strong>Oferta:</strong> {{ producto.id_oferta.descuento }}% de descuento
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-calendar me-2 text-warning"></i>
+                        <strong>Oferta válida hasta:</strong> {{ producto.id_oferta.fecha_fin }}
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="d-grid gap-2">
+                {% if producto.stock_p > 0 %}
+                <form method="post" action="{% url 'add_to_cart' producto.sku %}">
+                    {% csrf_token %}
+                    <div class="input-group mb-3">
+                        <input type="number" name="cantidad" class="form-control" value="1" min="1" max="{{ producto.stock_p }}" required>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-cart-plus me-1"></i>Añadir al carrito
+                        </button>
+                    </div>
+                </form>
+                {% else %}
+                <button class="btn btn-secondary btn-lg" disabled>
+                    <i class="fas fa-times me-2"></i>Sin Stock
+                </button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Productos relacionados -->
+    {% if productos_relacionados %}
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3 class="mb-4">Productos relacionados</h3>
+            <div class="row">
+                {% for producto_rel in productos_relacionados %}
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        {% if producto_rel.imagen %}
+                            <img src="{{ producto_rel.imagen.url }}" class="card-img-top" alt="{{ producto_rel.nombre_p }}" style="height: 200px; object-fit: cover;">
+                        {% else %}
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <i class="fas fa-image fa-3x text-muted"></i>
+                            </div>
+                        {% endif %}
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">{{ producto_rel.nombre_p }}</h6>
+                            <p class="card-text text-muted small">{{ producto_rel.descripcion_p|truncatewords:8 }}</p>
+                            
+                            <div class="producto-precio mb-3">
+                                {% if producto_rel.tiene_oferta_activa %}
+                                    <span class="text-muted text-decoration-line-through small">${{ producto_rel.precio_p|floatformat:0 }} CLP</span>
+                                    <span class="text-danger fw-bold ms-1">${{ producto_rel.precio_con_descuento|floatformat:0 }} CLP</span>
+                                    <span class="badge bg-success ms-1 small">-{{ producto_rel.id_oferta.descuento }}%</span>
+                                {% else %}
+                                    <span class="fw-bold">${{ producto_rel.precio_p|floatformat:0 }} CLP</span>
+                                {% endif %}
+                            </div>
+                            
+                            <div class="mt-auto">
+                                <small class="text-muted">
+                                    <i class="fas fa-box me-1"></i>Stock: {{ producto_rel.stock_p }}
+                                </small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="{% url 'producto_detalle' producto_rel.sku %}" class="btn btn-outline-primary btn-sm w-100">
+                                <i class="fas fa-eye me-1"></i>Ver Detalles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %} 

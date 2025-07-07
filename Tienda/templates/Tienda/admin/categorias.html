@@ -1,0 +1,99 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}Gestionar Categorías - Administración{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2">
+            {% include "Tienda/admin/_sidebar.html" %}
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Gestionar Categorías</h1>
+            </div>
+
+            <div class="row">
+                <!-- Formulario para crear categoría -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Nueva Categoría</h5>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <label for="{{ form.nombre_c.id_for_label }}" class="form-label">Nombre de la Categoría</label>
+                                    {{ form.nombre_c }}
+                                    {% if form.nombre_c.errors %}
+                                    <div class="text-danger">
+                                        {% for error in form.nombre_c.errors %}
+                                        <small>{{ error }}</small>
+                                        {% endfor %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-plus me-1"></i>Crear Categoría
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lista de categorías -->
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Categorías Existentes</h5>
+                        </div>
+                        <div class="card-body">
+                            {% if categorias %}
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Productos</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for categoria in categorias %}
+                                        <tr>
+                                            <td>{{ categoria.id_categoria }}</td>
+                                            <td>
+                                                <span class="badge bg-secondary fs-6">{{ categoria.nombre_c }}</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-info">{{ categoria.producto_set.count }}</span>
+                                            </td>
+                                            <td>
+                                                <a href="{% url 'admin_categoria_eliminar' categoria.id_categoria %}" class="btn btn-sm btn-outline-danger" title="Eliminar">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            {% else %}
+                            <div class="text-center py-5">
+                                <i class="fas fa-tags fa-3x text-muted mb-3"></i>
+                                <h3>No hay categorías</h3>
+                                <p class="text-muted">Comienza creando tu primera categoría.</p>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,36 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}Detalle Mensaje - Administración{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Detalle del Mensaje</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Nombre:</strong> {{ mensaje.nombre }}</p>
+                    <p><strong>Correo:</strong> {{ mensaje.correo }}</p>
+                    <p><strong>Asunto:</strong> {{ mensaje.asunto }}</p>
+                    <p><strong>Fecha:</strong> {{ mensaje.fecha|date:"d/m/Y H:i" }}</p>
+                    <p><strong>Estado:</strong> {% if mensaje.leido %}<span class="badge bg-success">Leído</span>{% else %}<span class="badge bg-warning text-dark">No leído</span>{% endif %}</p>
+                    <hr>
+                    <p><strong>Mensaje:</strong></p>
+                    <div class="bg-light p-3 rounded">{{ mensaje.mensaje }}</div>
+                    <div class="mt-4 d-flex gap-2">
+                        {% if not mensaje.leido %}
+                        <a href="{% url 'admin_mensaje_marcar_leido' mensaje.id_contacto %}" class="btn btn-success">Marcar como leído</a>
+                        {% else %}
+                        <a href="{% url 'admin_mensaje_marcar_no_leido' mensaje.id_contacto %}" class="btn btn-warning">Marcar como no leído</a>
+                        {% endif %}
+                        <a href="{% url 'admin_mensaje_eliminar' mensaje.id_contacto %}" class="btn btn-danger">Eliminar</a>
+                        <a href="{% url 'admin_mensajes' %}" class="btn btn-secondary">Volver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

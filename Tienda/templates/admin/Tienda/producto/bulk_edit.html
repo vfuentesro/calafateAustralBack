@@ -1,0 +1,130 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ form.media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}">
+<style>
+    .form-row {
+        margin-bottom: 20px;
+    }
+    .form-row label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .form-row input, .form-row select, .form-row textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .help-text {
+        color: #666;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .product-list {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .warning {
+        background: #fff3cd;
+        border: 1px solid #ffeaa7;
+        color: #856404;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:Tienda_producto_changelist' %}">Productos</a>
+    &rsaquo; Modificar productos seleccionados
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="warning">
+        <strong>⚠️ Atención:</strong> Los cambios se aplicarán a todos los productos seleccionados. 
+        Si dejas un campo vacío, no se modificará ese campo en los productos.
+    </div>
+
+    <div class="product-list">
+        <h3>Productos seleccionados ({{ queryset.count }})</h3>
+        <ul>
+            {% for producto in queryset %}
+            <li><strong>{{ producto.nombre_p }}</strong> - ID: {{ producto.id_producto }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <label for="nombre_p">Nombre del producto:</label>
+            <input type="text" name="nombre_p" id="nombre_p" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Si se especifica, se aplicará a todos los productos seleccionados</div>
+        </div>
+
+        <div class="form-row">
+            <label for="descripcion_p">Descripción:</label>
+            <textarea name="descripcion_p" id="descripcion_p" rows="3" placeholder="Dejar vacío para no modificar"></textarea>
+            <div class="help-text">Si se especifica, se aplicará a todos los productos seleccionados</div>
+        </div>
+
+        <div class="form-row">
+            <label for="precio_p">Precio (pesos chilenos):</label>
+            <input type="number" name="precio_p" id="precio_p" min="0" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Precio en pesos chilenos (números enteros, ej: 15000)</div>
+        </div>
+
+        <div class="form-row">
+            <label for="stock_p">Stock:</label>
+            <input type="number" name="stock_p" id="stock_p" min="0" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Cantidad disponible en stock</div>
+        </div>
+
+        <div class="form-row">
+            <label for="id_categoria">Categoría:</label>
+            <select name="id_categoria" id="id_categoria">
+                <option value="0">-- Sin cambios --</option>
+                <option value="">-- Sin categoría --</option>
+                {% for categoria in categorias %}
+                <option value="{{ categoria.id_categoria }}">{{ categoria.nombre_c }}</option>
+                {% endfor %}
+            </select>
+            <div class="help-text">Selecciona una categoría o "Sin categoría" para quitar la categoría actual</div>
+        </div>
+
+        <div class="form-row">
+            <label for="id_oferta">Oferta:</label>
+            <select name="id_oferta" id="id_oferta">
+                <option value="0">-- Sin cambios --</option>
+                <option value="">-- Sin oferta --</option>
+                {% for oferta in ofertas %}
+                <option value="{{ oferta.id_oferta }}">{{ oferta.descuento }}% - {{ oferta.estado }}</option>
+                {% endfor %}
+            </select>
+            <div class="help-text">Selecciona una oferta o "Sin oferta" para quitar la oferta actual</div>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" name="apply" value="Aplicar cambios" class="default" style="background: #79aec8; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+            <a href="{% url 'admin:Tienda_producto_changelist' %}" class="button" style="background: #ba2121; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-left: 10px;">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %} 

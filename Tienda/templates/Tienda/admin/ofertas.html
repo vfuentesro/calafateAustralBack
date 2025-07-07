@@ -1,0 +1,61 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}Ofertas - Administración{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2">
+            {% include "Tienda/admin/_sidebar.html" %}
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Ofertas</h1>
+                <a href="{% url 'admin_oferta_crear' %}" class="btn btn-primary">Nueva Oferta</a>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Listado de Ofertas</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Descuento (%)</th>
+                                    <th>Fecha Inicio</th>
+                                    <th>Fecha Fin</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for oferta in ofertas %}
+                                <tr>
+                                    <td>{{ oferta.id_oferta }}</td>
+                                    <td>{{ oferta.descuento }}</td>
+                                    <td>{{ oferta.fecha_inicio }}</td>
+                                    <td>{{ oferta.fecha_fin }}</td>
+                                    <td>{{ oferta.estado|title }}</td>
+                                    <td>
+                                        <a href="{% url 'admin_oferta_editar' oferta.id_oferta %}" class="btn btn-sm btn-outline-primary" title="Editar"><i class="fas fa-edit"></i></a>
+                                        <a href="{% url 'admin_oferta_eliminar' oferta.id_oferta %}" class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center">No hay ofertas registradas.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,47 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}Eliminar Producto - Administración{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        Confirmar Eliminación
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <h5>¿Estás seguro de que quieres eliminar este producto?</h5>
+                    
+                    <div class="alert alert-warning">
+                        <strong>Producto:</strong> {{ producto.nombre_p }}<br>
+                        <strong>ID:</strong> {{ producto.id_producto }}<br>
+                        <strong>Precio:</strong> ${{ producto.precio_p }}<br>
+                        <strong>Stock:</strong> {{ producto.stock_p }}
+                    </div>
+                    
+                    <div class="alert alert-danger">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>¡Atención!</strong> Esta acción no se puede deshacer.
+                    </div>
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="d-flex justify-content-between">
+                            <a href="{% url 'admin_productos' %}" class="btn btn-secondary">
+                                <i class="fas fa-times me-1"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash me-1"></i>Eliminar Producto
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

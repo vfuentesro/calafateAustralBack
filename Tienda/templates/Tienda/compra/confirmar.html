@@ -1,0 +1,70 @@
+{% extends 'Tienda/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">¡Compra Confirmada!</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Detalles de la compra</h5>
+                    
+                    <div class="mb-4">
+                        <h6>Información del comprador:</h6>
+                        <p><strong>Nombre:</strong> {{ comprador.nombre_u }}</p>
+                        <p><strong>RUT:</strong> {{ comprador.rut_usuario }}</p>
+                        <p><strong>Correo:</strong> {{ comprador.correo_u }}</p>
+                        <p><strong>Teléfono:</strong> {{ comprador.numero_telefono_u }}</p>
+                        {% if direccion_envio %}
+                        <p><strong>Dirección:</strong> {{ direccion_envio.calle }} {{ direccion_envio.numero }}, {{ direccion_envio.comuna }}, {{ direccion_envio.region }}</p>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6>Método de pago:</h6>
+                        <p>{{ metodo_pago.nombre }}</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6>Detalle de la compra:</h6>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio unitario</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for detalle in detalles_venta %}
+                                <tr>
+                                    <td>{{ detalle.id_producto.nombre_p }}</td>
+                                    <td>{{ detalle.cantidad_dv }}</td>
+                                    <td>${{ detalle.precio_unitario_dv|floatformat:0 }}</td>
+                                    <td>${{ detalle.subtotal_dv|floatformat:0 }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <strong>Total: ${{ venta.total_v|floatformat:0 }}</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info">
+                        <p class="mb-0">Gracias por su compra. Recibirá un correo electrónico con los detalles de su pedido.</p>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'home' %}" class="btn btn-primary">Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

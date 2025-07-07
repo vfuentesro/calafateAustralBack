@@ -1,0 +1,96 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}Usuarios - Administración{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2">
+            {% include "Tienda/admin/_sidebar.html" %}
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Usuarios</h1>
+                <a href="{% url 'admin_usuario_crear' %}" class="btn btn-primary">Nuevo Usuario</a>
+            </div>
+            <form method="get" class="row g-2 mb-3">
+                <div class="col-md-4">
+                    <input type="text" name="q" value="{{ query }}" class="form-control" placeholder="Buscar por nombre, apellido o correo">
+                </div>
+                <div class="col-md-3">
+                    <select name="tipo" class="form-select">
+                        <option value="">Todos los tipos</option>
+                        <option value="admin" {% if tipo == 'admin' %}selected{% endif %}>Administrador</option>
+                        <option value="cliente" {% if tipo == 'cliente' %}selected{% endif %}>Cliente</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-secondary w-100">Filtrar</button>
+                </div>
+            </form>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Listado de Usuarios</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Email</th>
+                                    <th>Tipo</th>
+                                    <th>Fecha Registro</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for usuario in page_obj %}
+                                <tr>
+                                    <td>{{ usuario.id }}</td>
+                                    <td>{{ usuario.nombre_u }}</td>
+                                    <td>{{ usuario.apellido_u }}</td>
+                                    <td>{{ usuario.correo_u }}</td>
+                                    <td>{% if usuario.tipo_u == 'admin' %}<span class="badge bg-primary">Admin</span>{% else %}<span class="badge bg-secondary">Cliente</span>{% endif %}</td>
+                                    <td>{{ usuario.date_joined|date:"d/m/Y H:i" }}</td>
+                                    <td>
+                                        <a href="{% url 'admin_usuario_editar' usuario.id %}" class="btn btn-sm btn-outline-info" title="Editar"><i class="fas fa-edit"></i></a>
+                                        <a href="{% url 'admin_usuario_eliminar' usuario.id %}" class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="fas fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="7" class="text-center">No hay usuarios registrados.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Paginación -->
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            {% if page_obj.has_previous %}
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}&q={{ query }}&tipo={{ tipo }}">Anterior</a></li>
+                            {% else %}
+                            <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+                            {% endif %}
+                            {% for num in page_obj.paginator.page_range %}
+                            <li class="page-item {% if page_obj.number == num %}active{% endif %}"><a class="page-link" href="?page={{ num }}&q={{ query }}&tipo={{ tipo }}">{{ num }}</a></li>
+                            {% endfor %}
+                            {% if page_obj.has_next %}
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}&q={{ query }}&tipo={{ tipo }}">Siguiente</a></li>
+                            {% else %}
+                            <li class="page-item disabled"><span class="page-link">Siguiente</span></li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

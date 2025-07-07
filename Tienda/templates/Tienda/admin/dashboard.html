@@ -1,0 +1,317 @@
+{% extends 'Tienda/base.html' %}
+
+{% block title %}Dashboard - Administración{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2">
+            {% include "Tienda/admin/_sidebar.html" %}
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Dashboard</h1>
+                <div>
+                    <a href="{% url 'admin_productos' %}" class="btn btn-primary">
+                        <i class="fas fa-plus me-1"></i>Gestionar Productos
+                    </a>
+                </div>
+            </div>
+
+            <!-- Estadísticas -->
+            <div class="row mb-4">
+                <div class="col-md-3 mb-3">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>{{ total_productos }}</h4>
+                                    <p class="mb-0">Productos</p>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fas fa-box fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>{{ total_ventas }}</h4>
+                                    <p class="mb-0">Ventas</p>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fas fa-shopping-cart fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="card bg-info text-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>{{ total_usuarios }}</h4>
+                                    <p class="mb-0">Usuarios</p>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="card bg-warning text-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>{{ productos_bajo_stock.count }}</h4>
+                                    <p class="mb-0">Bajo Stock</p>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fas fa-exclamation-triangle fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>{{ total_ofertas }}</h4>
+                                    <p class="mb-0">Ofertas</p>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fas fa-percent fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos con bajo stock -->
+            {% if productos_bajo_stock %}
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                Productos con bajo stock
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Producto</th>
+                                            <th>Categoría</th>
+                                            <th>Stock</th>
+                                            <th>Precio</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for producto in productos_bajo_stock %}
+                                        <tr>
+                                            <td>{{ producto.nombre_p }}</td>
+                                            <td>
+                                                {% if producto.id_categoria %}
+                                                {{ producto.id_categoria.nombre_c }}
+                                                {% else %}
+                                                <span class="text-muted">Sin categoría</span>
+                                                {% endif %}
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-danger">{{ producto.stock_p }}</span>
+                                            </td>
+                                            <td>${{ producto.precio_p }}</td>
+                                            <td>
+                                                <a href="{% url 'admin_producto_editar' producto.id_producto %}" class="btn btn-sm btn-outline-primary">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Acciones rápidas -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Acciones rápidas</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <a href="{% url 'admin_producto_crear' %}" class="btn btn-primary w-100">
+                                        <i class="fas fa-plus me-2"></i>Nuevo Producto
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <a href="{% url 'admin_categorias' %}" class="btn btn-success w-100">
+                                        <i class="fas fa-tags me-2"></i>Gestionar Categorías
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <a href="{% url 'admin_ventas' %}" class="btn btn-info w-100">
+                                        <i class="fas fa-chart-line me-2"></i>Ver Ventas
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <a href="{% url 'admin_ofertas' %}" class="btn btn-warning w-100">
+                                        <i class="fas fa-percent me-2"></i>Gestionar Ofertas
+                                    </a>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <a href="/admin/" class="btn btn-secondary w-100">
+                                        <i class="fas fa-cog me-2"></i>Admin Django
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficas -->
+            <div class="row mb-4">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header"><strong>Ventas por mes (últimos 12 meses)</strong></div>
+                        <div class="card-body">
+                            <canvas id="ventasMesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header"><strong>Ingresos por mes (últimos 12 meses)</strong></div>
+                        <div class="card-body">
+                            <canvas id="ingresosMesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header"><strong>Productos más vendidos</strong></div>
+                        <div class="card-body">
+                            <canvas id="productosVendidosChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header"><strong>Nuevos usuarios por mes</strong></div>
+                        <div class="card-body">
+                            <canvas id="usuariosMesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Datos para gráficas en JSON -->
+{{ months|json_script:"months-data" }}
+{{ ventas_por_mes|json_script:"ventas-data" }}
+{{ ingresos_por_mes|json_script:"ingresos-data" }}
+{{ productos_labels|json_script:"productos-labels" }}
+{{ productos_data|json_script:"productos-data" }}
+{{ usuarios_por_mes|json_script:"usuarios-data" }}
+
+<!-- CDN Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const months = JSON.parse(document.getElementById('months-data').textContent);
+    const ventasPorMes = JSON.parse(document.getElementById('ventas-data').textContent);
+    const ingresosPorMes = JSON.parse(document.getElementById('ingresos-data').textContent);
+    const productosLabels = JSON.parse(document.getElementById('productos-labels').textContent);
+    const productosData = JSON.parse(document.getElementById('productos-data').textContent);
+    const usuariosPorMes = JSON.parse(document.getElementById('usuarios-data').textContent);
+    // Ventas por mes
+    new Chart(document.getElementById('ventasMesChart').getContext('2d'), {
+        type: 'line',
+        data: {
+            labels: months,
+            datasets: [{
+                label: 'Ventas',
+                data: ventasPorMes,
+                borderColor: '#007bff',
+                backgroundColor: 'rgba(0,123,255,0.1)',
+                fill: true
+            }]
+        },
+        options: {responsive: true}
+    });
+    // Ingresos por mes
+    new Chart(document.getElementById('ingresosMesChart').getContext('2d'), {
+        type: 'line',
+        data: {
+            labels: months,
+            datasets: [{
+                label: 'Ingresos',
+                data: ingresosPorMes,
+                borderColor: '#28a745',
+                backgroundColor: 'rgba(40,167,69,0.1)',
+                fill: true
+            }]
+        },
+        options: {responsive: true}
+    });
+    // Productos más vendidos
+    new Chart(document.getElementById('productosVendidosChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: productosLabels,
+            datasets: [{
+                label: 'Unidades vendidas',
+                data: productosData,
+                backgroundColor: '#ffc107'
+            }]
+        },
+        options: {responsive: true}
+    });
+    // Nuevos usuarios por mes
+    new Chart(document.getElementById('usuariosMesChart').getContext('2d'), {
+        type: 'line',
+        data: {
+            labels: months,
+            datasets: [{
+                label: 'Nuevos usuarios',
+                data: usuariosPorMes,
+                borderColor: '#17a2b8',
+                backgroundColor: 'rgba(23,162,184,0.1)',
+                fill: true
+            }]
+        },
+        options: {responsive: true}
+    });
+});
+</script>
+{% endblock %} 

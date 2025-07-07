@@ -1,0 +1,118 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ form.media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}">
+<style>
+    .form-row {
+        margin-bottom: 20px;
+    }
+    .form-row label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .form-row input, .form-row select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .help-text {
+        color: #666;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .sale-list {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .warning {
+        background: #fff3cd;
+        border: 1px solid #ffeaa7;
+        color: #856404;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:Tienda_venta_changelist' %}">Ventas</a>
+    &rsaquo; Modificar ventas seleccionadas
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="warning">
+        <strong>⚠️ Atención:</strong> Los cambios se aplicarán a todas las ventas seleccionadas. 
+        Si dejas un campo vacío, no se modificará ese campo en las ventas.
+    </div>
+
+    <div class="sale-list">
+        <h3>Ventas seleccionadas ({{ queryset.count }})</h3>
+        <ul>
+            {% for venta in queryset %}
+            <li><strong>Venta #{{ venta.id_venta }}</strong> - {{ venta.fecha_v }} - ${{ venta.total_v }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <label for="fecha_v">Fecha de venta:</label>
+            <input type="date" name="fecha_v" id="fecha_v">
+            <div class="help-text">Si se especifica, se aplicará a todas las ventas seleccionadas</div>
+        </div>
+
+        <div class="form-row">
+            <label for="total_v">Total de la venta (pesos chilenos):</label>
+            <input type="number" name="total_v" id="total_v" min="0" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Total en pesos chilenos (números enteros, ej: 45000)</div>
+        </div>
+
+        <div class="form-row">
+            <label for="id_usuario">Usuario:</label>
+            <select name="id_usuario" id="id_usuario">
+                <option value="0">-- Sin cambios --</option>
+                <option value="">-- Sin usuario --</option>
+                {% for usuario in usuarios %}
+                <option value="{{ usuario.id_usuario }}">{{ usuario.nombre_u }} {{ usuario.apellido_u }}</option>
+                {% endfor %}
+            </select>
+            <div class="help-text">Selecciona un usuario o "Sin usuario" para quitar el usuario actual</div>
+        </div>
+
+        <div class="form-row">
+            <label for="id_metodo">Método de pago:</label>
+            <select name="id_metodo" id="id_metodo">
+                <option value="0">-- Sin cambios --</option>
+                <option value="">-- Sin método --</option>
+                {% for metodo in metodos %}
+                <option value="{{ metodo.id_metodo }}">{{ metodo.nombre }}</option>
+                {% endfor %}
+            </select>
+            <div class="help-text">Selecciona un método de pago o "Sin método" para quitar el método actual</div>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" name="apply" value="Aplicar cambios" class="default" style="background: #79aec8; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+            <a href="{% url 'admin:Tienda_venta_changelist' %}" class="button" style="background: #ba2121; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-left: 10px;">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %} 

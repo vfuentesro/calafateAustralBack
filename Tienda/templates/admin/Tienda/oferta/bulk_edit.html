@@ -1,0 +1,110 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ form.media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}">
+<style>
+    .form-row {
+        margin-bottom: 20px;
+    }
+    .form-row label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .form-row input, .form-row select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .help-text {
+        color: #666;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .offer-list {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .warning {
+        background: #fff3cd;
+        border: 1px solid #ffeaa7;
+        color: #856404;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:Tienda_oferta_changelist' %}">Ofertas</a>
+    &rsaquo; Modificar ofertas seleccionadas
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="warning">
+        <strong>⚠️ Atención:</strong> Los cambios se aplicarán a todas las ofertas seleccionadas. 
+        Si dejas un campo vacío, no se modificará ese campo en las ofertas.
+    </div>
+
+    <div class="offer-list">
+        <h3>Ofertas seleccionadas ({{ queryset.count }})</h3>
+        <ul>
+            {% for oferta in queryset %}
+            <li><strong>{{ oferta.descuento }}%</strong> - {{ oferta.fecha_inicio }} a {{ oferta.fecha_fin }} - {{ oferta.estado }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <label for="descuento">Descuento (%):</label>
+            <input type="number" name="descuento" id="descuento" step="0.01" min="0" max="100" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Porcentaje de descuento (ej: 15.50 para 15.5%)</div>
+        </div>
+
+        <div class="form-row">
+            <label for="fecha_inicio">Fecha de inicio:</label>
+            <input type="date" name="fecha_inicio" id="fecha_inicio">
+            <div class="help-text">Si se especifica, se aplicará a todas las ofertas seleccionadas</div>
+        </div>
+
+        <div class="form-row">
+            <label for="fecha_fin">Fecha de fin:</label>
+            <input type="date" name="fecha_fin" id="fecha_fin">
+            <div class="help-text">Si se especifica, se aplicará a todas las ofertas seleccionadas</div>
+        </div>
+
+        <div class="form-row">
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="">-- Sin cambios --</option>
+                <option value="activo">Activo</option>
+                <option value="no_activo">No Activo</option>
+            </select>
+            <div class="help-text">Selecciona el estado de las ofertas</div>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" name="apply" value="Aplicar cambios" class="default" style="background: #79aec8; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+            <a href="{% url 'admin:Tienda_oferta_changelist' %}" class="button" style="background: #ba2121; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-left: 10px;">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %} 

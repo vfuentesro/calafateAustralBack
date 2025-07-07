@@ -1,0 +1,124 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ form.media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}">
+<style>
+    .form-row {
+        margin-bottom: 20px;
+    }
+    .form-row label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .form-row input, .form-row select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .help-text {
+        color: #666;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .detail-list {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .warning {
+        background: #fff3cd;
+        border: 1px solid #ffeaa7;
+        color: #856404;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:Tienda_detalleventa_changelist' %}">Detalles de Venta</a>
+    &rsaquo; Modificar detalles seleccionados
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="warning">
+        <strong>⚠️ Atención:</strong> Los cambios se aplicarán a todos los detalles de venta seleccionados. 
+        Si dejas un campo vacío, no se modificará ese campo en los detalles.
+    </div>
+
+    <div class="detail-list">
+        <h3>Detalles de venta seleccionados ({{ queryset.count }})</h3>
+        <ul>
+            {% for detalle in queryset %}
+            <li><strong>Detalle #{{ detalle.id_detalleventa }}</strong> - Cantidad: {{ detalle.cantidad_dv }} - ${{ detalle.precio_unitario_dv }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-row">
+            <label for="cantidad_dv">Cantidad:</label>
+            <input type="number" name="cantidad_dv" id="cantidad_dv" min="1" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Cantidad de productos</div>
+        </div>
+
+        <div class="form-row">
+            <label for="precio_unitario_dv">Precio unitario (pesos chilenos):</label>
+            <input type="number" name="precio_unitario_dv" id="precio_unitario_dv" min="0" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Precio por unidad en pesos chilenos (números enteros, ej: 15000)</div>
+        </div>
+
+        <div class="form-row">
+            <label for="subtotal_dv">Subtotal (pesos chilenos):</label>
+            <input type="number" name="subtotal_dv" id="subtotal_dv" min="0" placeholder="Dejar vacío para no modificar">
+            <div class="help-text">Subtotal en pesos chilenos (números enteros, ej: 45000)</div>
+        </div>
+
+        <div class="form-row">
+            <label for="id_venta">Venta:</label>
+            <select name="id_venta" id="id_venta">
+                <option value="0">-- Sin cambios --</option>
+                <option value="">-- Sin venta --</option>
+                {% for venta in ventas %}
+                <option value="{{ venta.id_venta }}">Venta #{{ venta.id_venta }} - {{ venta.fecha_v }}</option>
+                {% endfor %}
+            </select>
+            <div class="help-text">Selecciona una venta o "Sin venta" para quitar la venta actual</div>
+        </div>
+
+        <div class="form-row">
+            <label for="id_producto">Producto:</label>
+            <select name="id_producto" id="id_producto">
+                <option value="0">-- Sin cambios --</option>
+                <option value="">-- Sin producto --</option>
+                {% for producto in productos %}
+                <option value="{{ producto.id_producto }}">{{ producto.nombre_p }} - ${{ producto.precio_p }}</option>
+                {% endfor %}
+            </select>
+            <div class="help-text">Selecciona un producto o "Sin producto" para quitar el producto actual</div>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" name="apply" value="Aplicar cambios" class="default" style="background: #79aec8; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+            <a href="{% url 'admin:Tienda_detalleventa_changelist' %}" class="button" style="background: #ba2121; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-left: 10px;">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %} 
