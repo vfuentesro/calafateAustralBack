@@ -64,7 +64,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 
-CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=["http://localhost:5173"])
+CSRF_TRUSTED_ORIGINS = [
+    "https://calafate-austral.web.app",
+    "https://calafate-austral.firebaseapp.com",
+    "http://localhost:5173",
+]
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
 
 TEMPLATES = [
     {
@@ -248,16 +254,16 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
 CORS_ALLOWED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
-    # Agrega aquí tu dominio personalizado si lo tienes, por ejemplo:
-    # "https://www.tudominio.com",
+    "http://localhost:5173",  # para desarrollo local
 ]
 
 CORS_TRUSTED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
+    "http://localhost:5173",
 ]
-SESSION_COOKIE_SAMESITE = "Lax"
-SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SECURE = True
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
