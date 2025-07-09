@@ -208,8 +208,15 @@ class GetnetIntegration:
             "user": getattr(settings, 'GETNET_LOGIN', ''),
             "password": self.secret_key
         }
+        print("[GETNET DEBUG] merchant_id:", self.merchant_id)
+        print("[GETNET DEBUG] user:", getattr(settings, 'GETNET_LOGIN', ''))
+        print("[GETNET DEBUG] password:", self.secret_key)
+        print("[GETNET DEBUG] auth_url:", self.auth_url)
+        print("[GETNET DEBUG] payload:", payload)
         headers = {'Content-Type': 'application/json'}
         response = requests.post(self.auth_url, json=payload, headers=headers)
+        print("[GETNET DEBUG] response status:", response.status_code)
+        print("[GETNET DEBUG] response text:", response.text)
         response.raise_for_status()
         data = response.json()
         GetnetIntegration._access_token = data['access_token']

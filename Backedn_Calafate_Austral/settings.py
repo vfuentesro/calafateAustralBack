@@ -38,8 +38,8 @@ ALLOWED_HOSTS = [
     "calafateaustralback-production.up.railway.app",
     "calafate-austral.web.app",
     "calafate-austral.firebaseapp.com",
-    "localhost",
-    "127.0.0.1"
+    "calafateaustral.cl",
+    "www.calafateaustral.cl"
 ]
 
 
@@ -73,11 +73,11 @@ ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 CSRF_TRUSTED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
-    "http://localhost:5173",
-    "https://calafateaustralback-production.up.railway.app"
+    "https://calafateaustral.cl",
+    "https://www.calafateaustral.cl"
 ]
 CSRF_COOKIE_SECURE = True
-CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SAMESITE = 'Lax'
 
 TEMPLATES = [
     {
@@ -101,24 +101,38 @@ WSGI_APPLICATION = 'Backedn_Calafate_Austral.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 # Configuración de base de datos compatible con Railway y variables individuales
-if env('DATABASE_URL', default=None):
-    DATABASES = {
-        'default': env.db(),  # Toma DATABASE_URL automáticamente
+#if env('DATABASE_URL', default=None):
+ #   DATABASES = {
+ #       'default': env.db(),  # Toma DATABASE_URL automáticamente
+ #   }
+#else:
+  #  DATABASES = {
+   #     'default': {
+    #        'ENGINE': 'django.db.backends.mysql',
+     ##      'USER': env('MYSQLUSER', default='root'),
+       #     'PASSWORD': env('MYSQLPASSWORD', default=''),
+        #    'HOST': env('MYSQLHOST', default='localhost'),
+         #   'PORT': env('MYSQLPORT', default='3306'),
+          #  'OPTIONS': {
+           #     'charset': 'utf8mb4',
+    #        },
+    #    }
+    #}
+
+# Configuración de base de datos para entorno local
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('DB_NAME', default='calafate'),
+        'USER': env('DB_USER', default='root'),
+        'PASSWORD': env('DB_PASSWORD', default='4dm1n1str4d0r'),
+        'HOST': env('DB_HOST', default='localhost'),
+        'PORT': env('DB_PORT', default='3306'),
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': env('MYSQLDATABASE', default='railway'),
-            'USER': env('MYSQLUSER', default='root'),
-            'PASSWORD': env('MYSQLPASSWORD', default=''),
-            'HOST': env('MYSQLHOST', default='localhost'),
-            'PORT': env('MYSQLPORT', default='3306'),
-            'OPTIONS': {
-                'charset': 'utf8mb4',
-            },
-        }
-    }
+}
 
 
 # Password validation
@@ -214,7 +228,7 @@ CHILEXPRESS_API_KEY = env('CHILEXPRESS_API_KEY')
 CHILEXPRESS_API_URL = env('CHILEXPRESS_API_URL')
 
 # URL base del sitio (para webhooks y redirecciones)
-BASE_URL = env('BASE_URL', default='http://localhost:8000')  # Cambiar en producción
+BASE_URL = env('BASE_URL', default='https://calafateaustralback-production.up.railway.app')  # Cambiar en producción
 
 # Configuración de logging
 LOGGING = {
@@ -261,17 +275,18 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
 CORS_ALLOWED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
-    "http://localhost:5173",
-    "https://calafateaustralback-production.up.railway.app"
+    "https://calafateaustral.cl",
+    "https://www.calafateaustral.cl"
 ]
 
 CORS_TRUSTED_ORIGINS = [
     "https://calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
-    "http://localhost:5173",
+    "https://calafateaustral.cl",
+    "https://www.calafateaustral.cl"
 ]
-SESSION_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = 'Lax'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [

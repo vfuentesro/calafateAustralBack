@@ -46644,3 +46644,600 @@ INFO 2025-07-07 10:35:06,558 autoreload 11692 15144 C:\Users\vicen\Downloads\cal
 INFO 2025-07-07 10:35:07,966 autoreload 4696 14532 Watching for file changes with StatReloader
 INFO 2025-07-07 10:35:10,525 autoreload 4696 14532 C:\Users\vicen\Downloads\calafateAustral\back-end\Tienda\urls.py changed, reloading.
 INFO 2025-07-07 10:35:11,808 autoreload 2524 14068 Watching for file changes with StatReloader
+INFO 2025-07-07 11:07:04,739 autoreload 19604 22964 Watching for file changes with StatReloader
+INFO 2025-07-07 11:07:07,448 basehttp 19604 22800 "GET / HTTP/1.1" 200 9607
+INFO 2025-07-07 11:07:07,569 basehttp 19604 22800 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-07 11:07:07,634 basehttp 19604 22800 "GET /static/favicon.ico HTTP/1.1" 200 1
+INFO 2025-07-07 11:07:21,067 basehttp 19604 22800 "POST /compra/login/ HTTP/1.1" 302 0
+INFO 2025-07-07 11:07:21,115 basehttp 19604 22800 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 11:07:25,109 basehttp 19604 22800 "GET /panel/ventas/ HTTP/1.1" 200 22672
+INFO 2025-07-07 11:07:27,101 basehttp 19604 22800 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 11:09:48,825 autoreload 19604 22964 C:\Users\vicen\Downloads\calafateAustral\back-end\Backedn_Calafate_Austral\settings.py changed, reloading.
+INFO 2025-07-07 11:09:49,678 autoreload 21672 28308 Watching for file changes with StatReloader
+INFO 2025-07-07 11:10:20,976 autoreload 7764 7784 Watching for file changes with StatReloader
+INFO 2025-07-07 11:14:42,175 autoreload 27016 26144 Watching for file changes with StatReloader
+WARNING 2025-07-07 11:14:44,138 base 27016 3896 Session data corrupted
+WARNING 2025-07-07 11:14:44,142 log 27016 3896 Forbidden: /api/auth/me/
+WARNING 2025-07-07 11:14:44,142 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 403 58
+WARNING 2025-07-07 11:14:44,228 base 27016 3896 Session data corrupted
+WARNING 2025-07-07 11:14:44,229 log 27016 3896 Forbidden: /api/auth/me/
+WARNING 2025-07-07 11:14:44,229 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 403 58
+INFO 2025-07-07 11:14:44,238 basehttp 27016 3896 "GET /api/productos/ HTTP/1.1" 200 431
+INFO 2025-07-07 11:14:44,349 basehttp 27016 3896 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-07 11:14:45,134 basehttp 27016 1920 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 11:15:00,761 basehttp 27016 3896 "GET /api/csrf/ HTTP/1.1" 200 29
+INFO 2025-07-07 11:15:00,768 basehttp 27016 30076 "OPTIONS /compra/login/ HTTP/1.1" 200 0
+WARNING 2025-07-07 11:15:00,980 base 27016 3896 Session data corrupted
+INFO 2025-07-07 11:15:00,999 basehttp 27016 3896 "POST /compra/login/ HTTP/1.1" 200 75
+INFO 2025-07-07 11:15:01,010 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 11:15:01,251 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 11:15:01,327 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 11:15:01,327 basehttp 27016 26632 "GET /api/productos/ HTTP/1.1" 200 431
+INFO 2025-07-07 11:15:04,199 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 11:15:04,270 basehttp 27016 26632 "GET /api/productos/ HTTP/1.1" 200 431
+INFO 2025-07-07 11:15:04,270 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 11:15:06,133 basehttp 27016 3896 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 11:15:06,296 basehttp 27016 3896 "GET /static/favicon.ico HTTP/1.1" 200 1
+INFO 2025-07-07 11:15:09,513 basehttp 27016 26632 "GET /api/mis-ordenes/ HTTP/1.1" 200 15
+INFO 2025-07-07 11:15:09,513 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 11:15:13,564 basehttp 27016 30076 "OPTIONS /compra/logout/ HTTP/1.1" 200 0
+INFO 2025-07-07 11:15:13,574 basehttp 27016 3896 "POST /compra/logout/ HTTP/1.1" 302 0
+INFO 2025-07-07 11:15:13,582 basehttp 27016 30076 "OPTIONS / HTTP/1.1" 200 0
+INFO 2025-07-07 11:15:13,593 basehttp 27016 3896 "GET / HTTP/1.1" 200 9901
+WARNING 2025-07-07 11:15:15,477 log 27016 3896 Forbidden: /api/auth/me/
+WARNING 2025-07-07 11:15:15,477 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 403 58
+WARNING 2025-07-07 11:15:15,620 log 27016 3896 Forbidden: /api/auth/me/
+WARNING 2025-07-07 11:15:15,621 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 403 58
+INFO 2025-07-07 11:15:15,692 basehttp 27016 3896 "GET /api/productos/ HTTP/1.1" 200 431
+INFO 2025-07-07 11:15:25,766 basehttp 27016 3896 "GET /api/csrf/ HTTP/1.1" 200 29
+INFO 2025-07-07 11:15:25,894 basehttp 27016 3896 "POST /compra/login/ HTTP/1.1" 200 85
+INFO 2025-07-07 11:15:25,908 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 11:15:26,199 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 11:15:26,294 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 11:15:26,295 basehttp 27016 26632 "GET /api/productos/ HTTP/1.1" 200 431
+INFO 2025-07-07 11:15:28,418 basehttp 27016 3896 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 11:15:28,420 basehttp 27016 26632 "GET /api/mis-ordenes/ HTTP/1.1" 200 3764
+INFO 2025-07-07 13:13:40,943 autoreload 1424 1632 Watching for file changes with StatReloader
+INFO 2025-07-07 13:13:45,395 basehttp 1424 17876 "GET / HTTP/1.1" 200 10546
+INFO 2025-07-07 13:13:45,526 basehttp 1424 17876 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-07 13:13:45,727 basehttp 1424 17876 "GET /static/favicon.ico HTTP/1.1" 200 1
+INFO 2025-07-07 13:14:03,354 basehttp 1424 16596 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:14:03,408 basehttp 1424 16596 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:14:03,417 basehttp 1424 16840 "GET /api/productos/ HTTP/1.1" 200 431
+INFO 2025-07-07 13:14:04,216 basehttp 1424 16840 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-07 13:15:38,065 basehttp 1424 17876 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 13:15:40,797 basehttp 1424 17876 "GET /panel/productos/ HTTP/1.1" 200 12631
+INFO 2025-07-07 13:15:43,050 basehttp 1424 17876 "GET /panel/productos/crear/ HTTP/1.1" 200 12114
+INFO 2025-07-07 13:17:14,725 basehttp 1424 17876 "POST /panel/productos/crear/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:17:14,749 basehttp 1424 17876 "GET /panel/productos/ HTTP/1.1" 200 15899
+INFO 2025-07-07 13:17:14,795 basehttp 1424 17876 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-07 13:17:18,133 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:18,170 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:18,172 basehttp 1424 11312 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:17:18,255 basehttp 1424 11312 - Broken pipe from ('127.0.0.1', 58051)
+INFO 2025-07-07 13:17:20,936 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:21,852 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:22,363 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:22,817 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:23,859 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:26,550 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:32,550 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:32,630 basehttp 1424 13428 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:17:32,632 basehttp 1424 5880 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:19:54,917 basehttp 1424 18768 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-07 13:19:54,929 basehttp 1424 8816 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:20:26,432 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:20:26,448 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:20:26,449 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:20:26,479 basehttp 1424 18768 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:20:38,532 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:21:47,280 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:21:47,312 basehttp 1424 8816 "GET /api/mis-ordenes/ HTTP/1.1" 200 3764
+INFO 2025-07-07 13:21:47,312 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:23:36,310 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:23:36,344 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:23:36,344 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:23:36,365 basehttp 1424 18768 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:23:39,291 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:23:39,315 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:23:39,315 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:15,245 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:15,316 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:15,316 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:24:20,318 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:24:20,318 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:20,336 basehttp 1424 18768 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-07 13:24:22,346 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:22,398 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:22,398 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:24:41,154 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:41,258 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:24:41,259 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 760
+INFO 2025-07-07 13:24:50,504 basehttp 1424 8700 "GET /panel/productos/crear/ HTTP/1.1" 200 12114
+INFO 2025-07-07 13:24:50,582 basehttp 1424 8700 - Broken pipe from ('127.0.0.1', 58351)
+INFO 2025-07-07 13:25:53,742 basehttp 1424 4728 "POST /panel/productos/crear/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:25:53,765 basehttp 1424 4728 "GET /panel/productos/ HTTP/1.1" 200 18610
+INFO 2025-07-07 13:25:53,811 basehttp 1424 11484 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:25:53,821 basehttp 1424 4728 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-07 13:25:58,299 basehttp 1424 4728 "GET /panel/categorias/ HTTP/1.1" 200 11617
+INFO 2025-07-07 13:26:03,166 basehttp 1424 4728 "POST /panel/categorias/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:26:03,179 basehttp 1424 4728 "GET /panel/categorias/ HTTP/1.1" 200 12863
+INFO 2025-07-07 13:26:05,717 basehttp 1424 4728 "GET /panel/categorias/ HTTP/1.1" 200 12568
+INFO 2025-07-07 13:26:07,075 basehttp 1424 4728 "GET /panel/ofertas/ HTTP/1.1" 200 9013
+INFO 2025-07-07 13:26:08,592 basehttp 1424 4728 "GET /panel/productos/ HTTP/1.1" 200 18234
+INFO 2025-07-07 13:26:08,618 basehttp 1424 4728 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:26:10,583 basehttp 1424 4728 "GET /panel/productos/4/editar/ HTTP/1.1" 200 12541
+INFO 2025-07-07 13:26:15,724 basehttp 1424 4728 "POST /panel/productos/4/editar/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:26:15,747 basehttp 1424 4728 "GET /panel/productos/ HTTP/1.1" 200 18798
+INFO 2025-07-07 13:26:15,795 basehttp 1424 4728 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:26:18,161 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:26:18,271 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 1185
+INFO 2025-07-07 13:26:18,272 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-07 13:26:18,401 basehttp 1424 18768 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-07 13:27:03,439 basehttp 1424 4348 "OPTIONS /compra/logout/ HTTP/1.1" 200 0
+INFO 2025-07-07 13:27:03,453 basehttp 1424 18768 "POST /compra/logout/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:27:03,460 basehttp 1424 4348 "OPTIONS / HTTP/1.1" 200 0
+INFO 2025-07-07 13:27:03,471 basehttp 1424 18768 "GET / HTTP/1.1" 200 13000
+INFO 2025-07-07 13:27:13,841 basehttp 1424 18768 "GET /api/csrf/ HTTP/1.1" 200 29
+INFO 2025-07-07 13:27:13,851 basehttp 1424 4348 "OPTIONS /compra/login/ HTTP/1.1" 200 0
+INFO 2025-07-07 13:27:14,189 basehttp 1424 18768 "POST /compra/login/ HTTP/1.1" 200 75
+INFO 2025-07-07 13:27:14,207 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:27:14,547 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:27:14,631 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:27:14,633 basehttp 1424 8816 "GET /api/productos/ HTTP/1.1" 200 1185
+INFO 2025-07-07 13:27:14,743 basehttp 1424 18768 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:27:19,206 basehttp 1424 18768 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 13:27:19,418 basehttp 1424 18768 "GET /static/favicon.ico HTTP/1.1" 200 1
+INFO 2025-07-07 13:28:11,665 basehttp 1424 18768 "GET /panel/categorias/ HTTP/1.1" 200 12568
+INFO 2025-07-07 13:28:12,709 basehttp 1424 18768 "GET /panel/productos/ HTTP/1.1" 200 18238
+INFO 2025-07-07 13:28:12,737 basehttp 1424 18768 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:28:12,741 basehttp 1424 18768 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:29:00,060 basehttp 1424 18768 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 13:30:46,775 basehttp 1424 18768 "GET /admin/ HTTP/1.1" 200 12595
+INFO 2025-07-07 13:30:46,822 basehttp 1424 15268 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-07-07 13:30:46,824 basehttp 1424 18768 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-07-07 13:30:46,825 basehttp 1424 3320 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-07-07 13:30:46,826 basehttp 1424 14220 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-07 13:30:46,826 basehttp 1424 10188 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-07-07 13:30:46,827 basehttp 1424 5424 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-07 13:30:46,841 basehttp 1424 15268 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-07-07 13:30:46,861 basehttp 1424 18768 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-07 13:30:46,864 basehttp 1424 15268 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+WARNING 2025-07-07 13:30:46,890 log 1424 18768 Not Found: /favicon.ico
+WARNING 2025-07-07 13:30:46,890 basehttp 1424 18768 "GET /favicon.ico HTTP/1.1" 404 15984
+INFO 2025-07-07 13:30:57,193 basehttp 1424 15268 "GET /api/productos/ HTTP/1.1" 200 1185
+INFO 2025-07-07 13:30:57,197 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:30:57,208 basehttp 1424 18768 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:31:09,786 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:09,875 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:09,877 basehttp 1424 15268 "GET /api/productos/ HTTP/1.1" 200 1185
+INFO 2025-07-07 13:31:10,002 basehttp 1424 18768 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-07 13:31:13,217 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:24,256 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:24,272 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:27,517 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:27,549 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:33,755 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:38,004 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:31:38,043 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:16,553 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:16,594 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:27,936 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:27,952 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:30,826 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:30,861 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:33,537 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:33,553 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:37,895 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:38,003 basehttp 1424 18768 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:32:38,004 basehttp 1424 15268 "GET /api/productos/ HTTP/1.1" 200 1185
+INFO 2025-07-07 13:32:38,115 basehttp 1424 18768 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:46:47,970 basehttp 1424 18032 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 13:51:18,055 basehttp 1424 18136 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 13:51:32,152 basehttp 1424 18136 "GET /panel/categorias/ HTTP/1.1" 200 12568
+INFO 2025-07-07 13:51:35,258 basehttp 1424 18136 "GET /panel/ofertas/ HTTP/1.1" 200 9013
+INFO 2025-07-07 13:51:36,493 basehttp 1424 18136 "GET /panel/ventas/ HTTP/1.1" 200 22672
+INFO 2025-07-07 13:51:39,767 basehttp 1424 18136 "GET /panel/usuarios/ HTTP/1.1" 200 13328
+INFO 2025-07-07 13:51:46,676 basehttp 1424 18136 "GET /panel/mensajes/ HTTP/1.1" 200 8412
+INFO 2025-07-07 13:51:52,396 basehttp 1424 18136 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 13:53:17,545 basehttp 1424 15616 "OPTIONS /api/contactos/ HTTP/1.1" 200 0
+INFO 2025-07-07 13:53:17,558 basehttp 1424 18136 "POST /api/contactos/ HTTP/1.1" 201 295
+INFO 2025-07-07 13:53:21,660 basehttp 1424 18136 "GET /panel/mensajes/ HTTP/1.1" 200 9424
+INFO 2025-07-07 13:53:24,924 basehttp 1424 18136 "GET /panel/mensajes/2/ HTTP/1.1" 200 7268
+WARNING 2025-07-07 13:53:31,098 log 1424 18136 Not Found: /favicon.ico
+INFO 2025-07-07 13:53:31,098 basehttp 1424 18136 - Broken pipe from ('127.0.0.1', 58773)
+INFO 2025-07-07 13:54:59,706 basehttp 1424 14712 "GET /panel/ventas/ HTTP/1.1" 200 22672
+INFO 2025-07-07 13:55:06,286 basehttp 1424 14712 "GET /panel/ventas/ HTTP/1.1" 200 22672
+INFO 2025-07-07 13:55:07,185 basehttp 1424 14712 "GET /panel/ofertas/ HTTP/1.1" 200 9013
+INFO 2025-07-07 13:55:09,160 basehttp 1424 14712 "GET /panel/categorias/ HTTP/1.1" 200 12568
+INFO 2025-07-07 13:55:11,342 basehttp 1424 14712 "GET /panel/productos/ HTTP/1.1" 200 18238
+INFO 2025-07-07 13:55:11,375 basehttp 1424 8096 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-07 13:55:11,375 basehttp 1424 14712 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-07 13:55:11,390 basehttp 1424 1888 - Broken pipe from ('127.0.0.1', 58813)
+INFO 2025-07-07 13:55:22,700 basehttp 1424 14712 "GET /producto/694206969/ HTTP/1.1" 200 10697
+INFO 2025-07-07 13:56:15,925 basehttp 1424 14712 "GET /panel/productos/4/editar/ HTTP/1.1" 200 12541
+INFO 2025-07-07 13:56:20,710 basehttp 1424 14712 "POST /panel/productos/4/editar/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:56:20,727 basehttp 1424 14712 "GET /panel/productos/ HTTP/1.1" 200 18797
+INFO 2025-07-07 13:56:27,586 basehttp 1424 14712 "GET /panel/productos/crear/ HTTP/1.1" 200 12155
+INFO 2025-07-07 13:57:34,193 basehttp 1424 14712 "POST /panel/productos/crear/ HTTP/1.1" 302 0
+INFO 2025-07-07 13:57:34,213 basehttp 1424 14712 "GET /panel/productos/ HTTP/1.1" 200 21489
+INFO 2025-07-07 13:57:34,270 basehttp 1424 14712 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 200 83986
+INFO 2025-07-07 13:57:45,375 basehttp 1424 14712 "GET /panel/productos/?busqueda=&categoria=1 HTTP/1.1" 200 15511
+INFO 2025-07-07 13:57:45,402 basehttp 1424 14712 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 304 0
+INFO 2025-07-07 13:57:48,391 basehttp 1424 14712 "GET /panel/productos/?busqueda=&categoria=2 HTTP/1.1" 200 12804
+INFO 2025-07-07 13:57:51,541 basehttp 1424 14712 "GET /panel/productos/?busqueda=&categoria=3 HTTP/1.1" 200 12800
+INFO 2025-07-07 13:57:53,974 basehttp 1424 14712 "GET /panel/productos/?busqueda=&categoria= HTTP/1.1" 200 20935
+INFO 2025-07-07 13:57:53,999 basehttp 1424 14712 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:00:05,528 basehttp 1424 20924 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:00:05,571 basehttp 1424 20924 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:00:05,588 basehttp 1424 20924 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-07 14:00:05,618 basehttp 1424 20924 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:05:40,978 basehttp 1424 18508 "POST /compra/logout/ HTTP/1.1" 302 0
+INFO 2025-07-07 14:05:40,992 basehttp 1424 18508 "GET / HTTP/1.1" 200 14359
+INFO 2025-07-07 14:05:59,546 basehttp 1424 18508 "GET /api/csrf/ HTTP/1.1" 200 29
+INFO 2025-07-07 14:05:59,613 basehttp 1424 18508 "POST /compra/login/ HTTP/1.1" 200 75
+INFO 2025-07-07 14:05:59,625 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:05:59,838 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:05:59,879 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:05:59,881 basehttp 1424 19632 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-07 14:05:59,922 basehttp 1424 18508 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:06:33,618 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:06:33,619 basehttp 1424 19632 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-07 14:06:33,632 basehttp 1424 19632 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:06:33,632 basehttp 1424 18508 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:06:43,485 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:06:43,521 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:06:58,622 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:06:58,652 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:06:58,654 basehttp 1424 19632 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:06:58,681 basehttp 1424 18508 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-07 14:07:12,968 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:07:13,005 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:07:13,012 basehttp 1424 19632 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-07 14:07:21,960 basehttp 1424 18508 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 14:07:31,703 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:07:31,704 basehttp 1424 19632 "GET /api/mis-ordenes/ HTTP/1.1" 200 15
+INFO 2025-07-07 14:08:00,475 basehttp 1424 18508 "GET /panel/productos/ HTTP/1.1" 200 20939
+INFO 2025-07-07 14:08:00,519 basehttp 1424 18508 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:08:05,368 basehttp 1424 18508 "GET /panel/categorias/ HTTP/1.1" 200 12568
+INFO 2025-07-07 14:08:07,153 basehttp 1424 18508 "GET /panel/ofertas/ HTTP/1.1" 200 9013
+INFO 2025-07-07 14:08:08,718 basehttp 1424 18508 "GET /panel/ventas/ HTTP/1.1" 200 22672
+INFO 2025-07-07 14:08:10,831 basehttp 1424 18508 "GET /panel/usuarios/ HTTP/1.1" 200 13328
+INFO 2025-07-07 14:08:13,274 basehttp 1424 18508 "GET /panel/mensajes/ HTTP/1.1" 200 9424
+INFO 2025-07-07 14:08:19,913 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:08:19,945 basehttp 1424 18508 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:08:30,247 basehttp 1424 18508 "GET /panel/mensajes/2/ HTTP/1.1" 200 7268
+INFO 2025-07-07 14:08:40,694 basehttp 1424 18508 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 14:13:25,487 basehttp 1424 5988 "GET /panel/dashboard/ HTTP/1.1" 200 18094
+INFO 2025-07-07 14:13:37,394 basehttp 1424 5988 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:13:37,415 basehttp 1424 5988 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:13:37,415 basehttp 1424 4904 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-07 14:13:37,430 basehttp 1424 5988 "GET /media/productos/mochila.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:13:37,438 basehttp 1424 4904 "GET /media/productos/ponchos.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:13:37,438 basehttp 1424 5988 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 304 0
+INFO 2025-07-07 14:13:51,131 basehttp 1424 5988 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:13:51,151 basehttp 1424 5988 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-07 14:13:51,151 basehttp 1424 4904 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 20:38:11,588 autoreload 10352 1852 Watching for file changes with StatReloader
+INFO 2025-07-08 20:38:14,313 basehttp 10352 18748 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 20:38:14,321 basehttp 10352 3196 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 20:38:14,363 basehttp 10352 19224 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 20:38:14,482 basehttp 10352 18748 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-08 20:38:14,483 basehttp 10352 19224 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-08 21:14:19,563 basehttp 10352 17300 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 200 83986
+INFO 2025-07-08 21:14:23,239 basehttp 10352 17300 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 21:14:23,283 basehttp 10352 17300 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 21:14:26,949 basehttp 10352 17300 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 21:14:26,986 basehttp 10352 17300 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 21:14:26,992 basehttp 10352 10536 "GET /api/auth/me/ HTTP/1.1" 200 111
+INFO 2025-07-08 21:14:27,038 basehttp 10352 17300 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-08 21:14:28,112 basehttp 10352 9552 "OPTIONS /api/sync-cart/ HTTP/1.1" 200 0
+INFO 2025-07-08 21:14:28,122 basehttp 10352 17300 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:14:28,127 basehttp 10352 9552 "OPTIONS /compra/metodo-pago-api/ HTTP/1.1" 200 0
+INFO 2025-07-08 21:14:28,141 basehttp 10352 17300 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:14:28,148 basehttp 10352 9552 "OPTIONS /compra/getnet-checkout/ HTTP/1.1" 200 0
+WARNING 2025-07-08 21:14:28,160 log 10352 17300 Unauthorized: /compra/getnet-checkout/
+WARNING 2025-07-08 21:14:28,161 basehttp 10352 17300 "POST /compra/getnet-checkout/ HTTP/1.1" 401 27
+INFO 2025-07-08 21:15:05,019 basehttp 10352 17300 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:15:05,040 basehttp 10352 17300 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+WARNING 2025-07-08 21:15:05,058 log 10352 17300 Unauthorized: /compra/getnet-checkout/
+WARNING 2025-07-08 21:15:05,058 basehttp 10352 17300 "POST /compra/getnet-checkout/ HTTP/1.1" 401 27
+INFO 2025-07-08 21:15:21,328 basehttp 10352 9552 "OPTIONS /compra/logout/ HTTP/1.1" 200 0
+INFO 2025-07-08 21:15:21,344 basehttp 10352 17300 "POST /compra/logout/ HTTP/1.1" 302 0
+INFO 2025-07-08 21:15:21,349 basehttp 10352 9552 "OPTIONS / HTTP/1.1" 200 0
+INFO 2025-07-08 21:15:21,402 basehttp 10352 17300 "GET / HTTP/1.1" 200 14359
+WARNING 2025-07-08 21:15:22,741 log 10352 17300 Forbidden: /api/auth/me/
+WARNING 2025-07-08 21:15:22,741 basehttp 10352 17300 "GET /api/auth/me/ HTTP/1.1" 403 58
+WARNING 2025-07-08 21:15:22,778 log 10352 17300 Forbidden: /api/auth/me/
+WARNING 2025-07-08 21:15:22,778 basehttp 10352 17300 "GET /api/auth/me/ HTTP/1.1" 403 58
+INFO 2025-07-08 21:15:22,788 basehttp 10352 17300 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 21:15:22,838 basehttp 10352 17300 - Broken pipe from ('127.0.0.1', 50775)
+INFO 2025-07-08 21:15:22,838 basehttp 10352 10536 - Broken pipe from ('127.0.0.1', 50793)
+INFO 2025-07-08 21:15:33,497 basehttp 10352 2484 "GET /api/csrf/ HTTP/1.1" 200 29
+INFO 2025-07-08 21:15:33,504 basehttp 10352 9552 "OPTIONS /compra/login/ HTTP/1.1" 200 0
+INFO 2025-07-08 21:15:33,962 basehttp 10352 2484 "POST /compra/login/ HTTP/1.1" 200 85
+INFO 2025-07-08 21:15:33,973 basehttp 10352 2484 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:15:34,250 basehttp 10352 2484 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:15:34,296 basehttp 10352 2484 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:15:34,310 basehttp 10352 13972 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 21:15:41,059 basehttp 10352 13972 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:15:41,101 basehttp 10352 13972 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:15:41,101 basehttp 10352 2484 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:15:41,142 basehttp 10352 13972 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-08 21:15:51,271 basehttp 10352 13972 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:15:51,283 basehttp 10352 13972 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-08 21:15:51,501 views 10352 13972 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-08 21:15:51,502 log 10352 13972 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-08 21:15:51,502 basehttp 10352 13972 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-08 21:19:26,605 basehttp 10352 4248 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:19:26,641 basehttp 10352 4248 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-08 21:19:26,786 views 10352 4248 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-08 21:19:26,786 log 10352 4248 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-08 21:19:26,787 basehttp 10352 4248 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-08 21:19:39,004 basehttp 10352 4248 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:19:39,035 basehttp 10352 4248 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-08 21:19:39,138 views 10352 4248 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-08 21:19:39,139 log 10352 4248 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-08 21:19:39,139 basehttp 10352 4248 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-08 21:19:47,560 basehttp 10352 4248 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:19:47,680 basehttp 10352 4248 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:19:47,686 basehttp 10352 18952 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 21:19:49,086 basehttp 10352 4248 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 21:19:49,086 basehttp 10352 18952 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:19:49,117 basehttp 10352 4248 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-08 21:19:53,917 basehttp 10352 4248 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:19:53,970 basehttp 10352 4248 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:19:53,974 basehttp 10352 18952 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:19:54,040 basehttp 10352 4248 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-08 21:19:55,906 basehttp 10352 4248 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:19:55,926 basehttp 10352 4248 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-08 21:19:55,995 views 10352 4248 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-08 21:19:55,995 log 10352 4248 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-08 21:19:55,996 basehttp 10352 4248 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-08 21:21:49,957 autoreload 10352 1852 C:\Users\vicen\Downloads\calafateAustral\back-end\Tienda\getnet_integration.py changed, reloading.
+INFO 2025-07-08 21:21:52,531 autoreload 6768 17432 Watching for file changes with StatReloader
+INFO 2025-07-08 21:22:07,812 basehttp 6768 4640 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:22:07,832 basehttp 6768 4640 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:22:07,834 basehttp 6768 17780 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 21:22:22,479 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:22:22,545 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:22:22,550 basehttp 6768 4640 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:22:22,657 basehttp 6768 17780 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-08 21:22:26,686 basehttp 6768 17780 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:22:26,701 basehttp 6768 17780 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-08 21:22:26,789 views 6768 17780 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-08 21:22:26,791 log 6768 17780 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-08 21:22:26,792 basehttp 6768 17780 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-08 21:24:07,777 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:07,809 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:11,777 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:11,797 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:11,810 basehttp 6768 4640 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-08 21:24:16,160 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:16,199 basehttp 6768 4640 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:16,203 basehttp 6768 17780 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-08 21:24:16,269 basehttp 6768 4640 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-08 21:24:17,196 basehttp 6768 17780 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-08 21:24:17,211 basehttp 6768 4640 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-08 21:24:17,307 views 6768 17780 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-08 21:24:17,308 log 6768 17780 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-08 21:24:17,308 basehttp 6768 17780 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:39:36,849 autoreload 10404 7764 Watching for file changes with StatReloader
+INFO 2025-07-09 15:39:49,519 basehttp 10404 5192 "GET / HTTP/1.1" 200 15004
+INFO 2025-07-09 15:39:49,974 basehttp 10404 5192 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-09 15:39:49,976 basehttp 10404 14240 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 200 83986
+INFO 2025-07-09 15:39:49,976 basehttp 10404 2608 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-09 15:39:49,977 basehttp 10404 4716 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-09 15:39:49,981 basehttp 10404 4716 "GET /static/favicon.ico HTTP/1.1" 200 1
+INFO 2025-07-09 15:39:53,486 basehttp 10404 11456 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:39:53,619 basehttp 10404 11456 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:39:53,629 basehttp 10404 17344 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-09 15:39:54,394 basehttp 10404 11456 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-09 15:39:54,394 basehttp 10404 17344 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-09 15:40:05,513 basehttp 10404 11456 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-09 15:40:05,513 basehttp 10404 17344 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:40:05,532 basehttp 10404 11456 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-09 15:40:05,533 basehttp 10404 17344 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 200 83986
+INFO 2025-07-09 15:50:08,698 basehttp 10404 2236 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:50:08,788 basehttp 10404 2236 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:50:08,793 basehttp 10404 21632 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:50:08,836 basehttp 10404 2236 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-09 15:50:09,773 basehttp 10404 13068 "OPTIONS /api/sync-cart/ HTTP/1.1" 200 0
+INFO 2025-07-09 15:50:09,790 basehttp 10404 21632 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:50:09,797 basehttp 10404 13068 "OPTIONS /compra/metodo-pago-api/ HTTP/1.1" 200 0
+INFO 2025-07-09 15:50:09,816 basehttp 10404 2236 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:50:09,824 basehttp 10404 13068 "OPTIONS /compra/getnet-checkout/ HTTP/1.1" 200 0
+ERROR 2025-07-09 15:50:09,969 views 10404 21632 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:50:09,972 log 10404 21632 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:50:09,972 basehttp 10404 21632 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:51:16,342 basehttp 10404 2236 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:51:16,493 basehttp 10404 21632 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:51:16,510 basehttp 10404 2236 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:51:16,596 basehttp 10404 21632 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-09 15:51:21,787 basehttp 10404 2236 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:51:21,806 basehttp 10404 21632 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-09 15:51:21,924 views 10404 2236 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:51:21,924 log 10404 2236 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:51:21,925 basehttp 10404 2236 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:52:16,051 basehttp 10404 21632 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:52:16,080 basehttp 10404 2236 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-09 15:52:16,326 views 10404 21632 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:52:16,326 log 10404 21632 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:52:16,326 basehttp 10404 21632 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:52:52,464 basehttp 10404 2236 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:52:52,487 basehttp 10404 21632 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-09 15:52:52,713 views 10404 2236 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:52:52,713 log 10404 2236 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:52:52,714 basehttp 10404 2236 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:53:03,067 autoreload 23976 23688 Watching for file changes with StatReloader
+INFO 2025-07-09 15:53:07,931 basehttp 23976 24184 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:08,012 basehttp 23976 24184 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:08,028 basehttp 23976 24148 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-09 15:53:09,199 basehttp 23976 24148 "GET /media/productos/mochila.webp HTTP/1.1" 200 100768
+INFO 2025-07-09 15:53:27,552 basehttp 23976 24148 "GET /api/csrf/ HTTP/1.1" 200 29
+INFO 2025-07-09 15:53:27,559 basehttp 23976 23752 "OPTIONS /compra/login/ HTTP/1.1" 200 0
+INFO 2025-07-09 15:53:27,935 basehttp 23976 24148 "POST /compra/login/ HTTP/1.1" 200 85
+INFO 2025-07-09 15:53:27,950 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:28,371 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:28,443 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:28,480 basehttp 23976 24148 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-09 15:53:28,825 basehttp 23976 24148 "GET /media/productos/sombreroFieltro.webp HTTP/1.1" 200 28376
+INFO 2025-07-09 15:53:31,950 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:31,954 basehttp 23976 24184 "GET /api/productos/ HTTP/1.1" 200 1496
+INFO 2025-07-09 15:53:32,066 basehttp 23976 24148 "GET /media/productos/boina_DDmhj0w.webp HTTP/1.1" 200 83986
+INFO 2025-07-09 15:53:32,072 basehttp 23976 24148 "GET /media/productos/ponchos.webp HTTP/1.1" 200 46040
+INFO 2025-07-09 15:53:37,189 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:37,410 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:40,854 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:40,920 basehttp 23976 24148 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:40,925 basehttp 23976 24184 "GET /api/auth/me/ HTTP/1.1" 200 128
+INFO 2025-07-09 15:53:40,988 basehttp 23976 24148 "GET /compra/metodo-pago-api/ HTTP/1.1" 200 44
+INFO 2025-07-09 15:53:42,342 basehttp 23976 24148 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:53:42,396 basehttp 23976 24148 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-09 15:53:42,816 views 23976 24148 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:53:42,817 log 23976 24148 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:53:42,818 basehttp 23976 24148 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:55:31,627 basehttp 23976 24148 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:55:31,652 basehttp 23976 24148 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-09 15:55:31,870 views 23976 24148 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:55:31,871 log 23976 24148 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:55:31,871 basehttp 23976 24148 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 15:59:29,457 basehttp 23976 23024 "POST /api/sync-cart/ HTTP/1.1" 200 17
+INFO 2025-07-09 15:59:29,490 basehttp 23976 23024 "POST /compra/metodo-pago-api/ HTTP/1.1" 200 17
+ERROR 2025-07-09 15:59:29,796 views 23976 23024 Error en checkout Getnet: 403 Client Error: Forbidden for url: https://api.test.getnet.cl/v1/auth
+ERROR 2025-07-09 15:59:29,797 log 23976 23024 Internal Server Error: /compra/getnet-checkout/
+ERROR 2025-07-09 15:59:29,797 basehttp 23976 23024 "POST /compra/getnet-checkout/ HTTP/1.1" 500 69
+INFO 2025-07-09 16:10:12,780 autoreload 23976 23688 C:\Users\vicen\Downloads\calafateAustral\back-end\Backedn_Calafate_Austral\settings.py changed, reloading.
+INFO 2025-07-09 16:10:13,914 autoreload 21748 24400 Watching for file changes with StatReloader
+ERROR 2025-07-09 16:10:18,169 log 21748 24072 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,172 log 21748 1960 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,177 log 21748 20964 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,181 log 21748 24292 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,185 log 21748 21700 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,190 log 21748 24432 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-07-09 16:10:18,192 basehttp 21748 24072 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,195 basehttp 21748 1960 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,197 basehttp 21748 20964 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,198 basehttp 21748 24292 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,199 basehttp 21748 21700 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,202 basehttp 21748 24432 "GET /api/auth/me/ HTTP/1.1" 400 22353
+ERROR 2025-07-09 16:10:18,233 log 21748 5116 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,242 log 21748 22544 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR 2025-07-09 16:10:18,248 log 21748 16236 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-07-09 16:10:18,250 basehttp 21748 5116 "GET /api/auth/me/ HTTP/1.1" 400 22353
+ERROR 2025-07-09 16:10:18,257 log 21748 17568 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-07-09 16:10:18,260 basehttp 21748 22544 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,262 basehttp 21748 16236 "GET /api/auth/me/ HTTP/1.1" 400 22353
+WARNING 2025-07-09 16:10:18,265 basehttp 21748 17568 "GET /api/auth/me/ HTTP/1.1" 400 22353
+ERROR 2025-07-09 16:10:18,313 log 21748 22948 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\vicen\Downloads\calafateAustral\back-end\.venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2025-07-09 16:10:18,315 basehttp 21748 22948 "GET /api/auth/me/ HTTP/1.1" 400 22353
