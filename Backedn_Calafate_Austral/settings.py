@@ -77,7 +77,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://www.calafateaustral.cl"
 ]
 CSRF_COOKIE_SECURE = True
-CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'None'
 
 TEMPLATES = [
     {
@@ -286,7 +286,7 @@ CORS_TRUSTED_ORIGINS = [
     "https://www.calafateaustral.cl"
 ]
 SESSION_COOKIE_SECURE = True
-SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SAMESITE = 'None'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
