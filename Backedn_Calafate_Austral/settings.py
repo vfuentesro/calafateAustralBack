@@ -67,6 +67,7 @@ ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_DOMAIN = '.calafateaustral.cl'
 
 TEMPLATES = [
     {
@@ -276,6 +277,7 @@ CORS_TRUSTED_ORIGINS = [
 ]
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_DOMAIN = '.calafateaustral.cl'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
