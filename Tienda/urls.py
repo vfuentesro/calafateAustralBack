@@ -85,6 +85,7 @@ api_patterns = [
     path('compra/registro-usuario/', views.registro_usuario, name='api_registro_usuario'),
     path('compra/logout/', views.logout_cliente, name='api_logout_cliente'),
     path('compra/metodo-pago-api/', views.set_payment_method, name='api_set_payment_method_api'),
+    path('compra/getnet-checkout/', views.getnet_checkout, name='api_getnet_checkout'),
 ]
 
 urlpatterns += [
