@@ -64,10 +64,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 
-CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
+# --- CSRF y SESSION para cross-domain con subdominios ---
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_DOMAIN = '.calafateaustral.cl'
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_DOMAIN = '.calafateaustral.cl'
 
 TEMPLATES = [
     {
@@ -257,27 +260,30 @@ logs_dir = BASE_DIR / 'logs'
 if not logs_dir.exists():
     logs_dir.mkdir(exist_ok=True)
 
-# Configuración de CORS
+# --- CORS ---
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://calafateaustral.cl",
+    "https://www.calafateaustral.cl",
+    "https://calafate-austral.web.app",
+    "https://calafate-austral.firebaseapp.com"
+]
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
 ]
-CORS_ALLOWED_ORIGINS = [
-    "https://calafate-austral.web.app",
-    "https://calafate-austral.firebaseapp.com",
-    "https://calafateaustral.cl",
-    "https://www.calafateaustral.cl"
-]
-
 CORS_TRUSTED_ORIGINS = [
-    "https://calafate-austral.web.app",
-    "https://calafate-austral.firebaseapp.com",
     "https://calafateaustral.cl",
-    "https://www.calafateaustral.cl"
+    "https://www.calafateaustral.cl",
+    "https://calafate-austral.web.app",
+    "https://calafate-austral.firebaseapp.com"
 ]
-SESSION_COOKIE_SECURE = True
-SESSION_COOKIE_SAMESITE = 'None'
-SESSION_COOKIE_DOMAIN = '.calafateaustral.cl'
+CSRF_TRUSTED_ORIGINS = [
+    "https://calafateaustral.cl",
+    "https://www.calafateaustral.cl",
+    "https://api.calafateaustral.cl",
+    "https://calafate-austral.web.app",
+    "https://calafate-austral.firebaseapp.com"
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
