@@ -72,9 +72,11 @@ ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 
 CSRF_TRUSTED_ORIGINS = [
     "https://calafate-austral.web.app",
+    "https://www.calafate-austral.web.app",
     "https://calafate-austral.firebaseapp.com",
     "https://calafateaustral.cl",
     "https://www.calafateaustral.cl"
+    "https://calafateaustralback-production.up.railway.app"
 ]
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
