@@ -78,3 +78,14 @@ urlpatterns = [
     path('panel/usuarios/<int:usuario_id>/eliminar/', views.admin_usuario_eliminar, name='admin_usuario_eliminar'),
     path('panel/configuracion/', views.admin_configuracion, name='admin_configuracion'),
 ] 
+
+# --- API endpoints para compra bajo /api/ ---
+api_patterns = [
+    path('compra/login/', views.login_compra, name='api_login_compra'),
+    path('compra/registro-usuario/', views.registro_usuario, name='api_registro_usuario'),
+    path('compra/logout/', views.logout_cliente, name='api_logout_cliente'),
+]
+
+urlpatterns += [
+    path('api/', include(api_patterns)),
+] 
