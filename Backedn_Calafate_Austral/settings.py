@@ -34,13 +34,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = [
-    "calafateaustralback-production.up.railway.app",
-    "calafate-austral.web.app",
-    "calafate-austral.firebaseapp.com",
-    "calafateaustral.cl",
-    "www.calafateaustral.cl"
-]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 
 # Application definition
@@ -70,14 +64,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Backedn_Calafate_Austral.urls'
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://calafate-austral.web.app",
-    "https://www.calafate-austral.web.app",
-    "https://calafate-austral.firebaseapp.com",
-    "https://calafateaustral.cl",
-    "https://www.calafateaustral.cl"
-    "https://calafateaustralback-production.up.railway.app"
-]
+CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 
