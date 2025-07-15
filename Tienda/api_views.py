@@ -28,6 +28,11 @@ from .serializers import (
 )
 from .getnet_integration import GetnetIntegration
 from .servicios_envio import ChilexpressAPI, CorreosChileIntegration
+from .transbank_integration import TransbankIntegration
+from django.urls import reverse
+from .models import Venta, Detalleventa, Producto
+from django.utils import timezone
+from rest_framework.permissions import IsAuthenticated
 
 class UsuarioViewSet(viewsets.ModelViewSet):
     queryset = Usuario.objects.all()
@@ -418,3 +423,73 @@ def actualizar_usuario(request):
 @ensure_csrf_cookie
 def get_csrf(request):
     return JsonResponse({'detail': 'CSRF cookie set'})
+
+class WebpayInitiateView(APIView):
+    def post(self, request):
+        # Espera: {"venta_id": int}
+        venta_id = request.data.get('venta_id')
+        if not venta_id:
+            return Response({'error': 'Falta venta_id'}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            venta = Venta.objects.get(id_venta=venta_id)
+            return_url = request.build_absolute_uri(reverse('webpay_confirm'))
+            tbk = TransbankIntegration()
+            response = tbk.create_transaction(venta, return_url)
+            return Response({
+                'url': response['url'],
+                'token': response['token']
+            })
+        except Venta.DoesNotExist:
+            return Response({'error': 'Venta no encontrada'}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class WebpayConfirmView(APIView):
+    def post(self, request):
+        # Espera: {"token": str}
+        token = request.data.get('token')
+        if not token:
+            return Response({'error': 'Falta token'}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            tbk = TransbankIntegration()
+            result = tbk.commit_transaction(token)
+            # El email y actualización de venta ya se manejan en commit_transaction
+            return Response({'status': result['status'], 'details': result})
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class CrearVentaView(APIView):
+    permission_classes = [IsAuthenticated]
+    def post(self, request):
+        cart = request.data.get('cart', [])
+        if not cart or not isinstance(cart, list):
+            return Response({'error': 'Carrito vacío o inválido'}, status=400)
+        user = request.user
+        try:
+            total = 0
+            venta = Venta.objects.create(
+                fecha_v=timezone.now(),
+                total_v=0,
+                tipo_comprador='usuario',
+                usuario=user,
+                estado_pago='pendiente'
+            )
+            for item in cart:
+                producto = Producto.objects.get(id_producto=item.product.id_producto)
+                cantidad = item.quantity
+                subtotal = producto.precio_p * cantidad
+                total += subtotal
+                Detalleventa.objects.create(
+                    id_venta=venta,
+                    id_producto=producto,
+                    cantidad_dv=cantidad,
+                    precio_unitario_dv=producto.precio_p,
+                    subtotal_dv=subtotal
+                )
+                producto.stock_p -= cantidad
+                producto.save()
+            venta.total_v = total
+            venta.save()
+            return Response({'venta_id': venta.id_venta})
+        except Exception as e:
+            return Response({'error': str(e)}, status=500)

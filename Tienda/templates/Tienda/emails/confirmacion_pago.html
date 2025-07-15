@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Confirmación de Pago - Calafate Austral</title>
+</head>
+<body style="font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px;">
+    <div style="max-width: 600px; margin: auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #eee; padding: 24px;">
+        <h2 style="color: #2d6a4f;">¡Gracias por tu compra!</h2>
+        <p>Hola {{ venta.usuario.nombre_u }},</p>
+        <p>Tu pago ha sido <b>aprobado</b> y tu pedido está siendo procesado.</p>
+        <h3>Detalles de la compra:</h3>
+        <ul>
+            <li><b>Número de orden:</b> {{ venta.id_venta }}</li>
+            <li><b>Fecha:</b> {{ venta.fecha_v }}</li>
+            <li><b>Total pagado:</b> ${{ venta.total_v }}</li>
+        </ul>
+        <p>Pronto recibirás información sobre el envío.</p>
+        <p>Si tienes dudas, responde a este correo o contáctanos.</p>
+        <hr>
+        <p style="font-size: 0.9em; color: #888;">Calafate Austral &copy; {{ venta.fecha_v|date:'Y' }}</p>
+    </div>
+</body>
+</html> 

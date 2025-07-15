@@ -8,6 +8,9 @@ from .api_views import (
     mis_ordenes,
     actualizar_usuario,
     get_csrf,
+    WebpayInitiateView,
+    WebpayConfirmView,
+    CrearVentaView,
 )
 from . import views
 from django.urls import reverse
@@ -15,6 +18,8 @@ from django.urls import reverse_lazy
 from django.urls import path
 from django.urls import re_path
 from django.urls import include
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
 
 
 router = DefaultRouter()
@@ -90,4 +95,17 @@ api_patterns = [
 
 urlpatterns += [
     path('api/', include(api_patterns)),
+    path('api/webpay/initiate/', WebpayInitiateView.as_view(), name='webpay_initiate'),
+    path('api/webpay/confirm/', WebpayConfirmView.as_view(), name='webpay_confirm'),
+    path('api/crear-venta/', CrearVentaView.as_view(), name='crear_venta'),
+] 
+
+@csrf_exempt
+def webpay_webhook(request):
+    # Placeholder para futuras notificaciones automáticas de Transbank
+    # Puedes implementar la lógica según la documentación de Transbank si usas webhooks
+    return JsonResponse({'status': 'ok'})
+
+urlpatterns += [
+    path('webpay/webhook/', webpay_webhook, name='webpay_webhook'),
 ] 
